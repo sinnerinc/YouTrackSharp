@@ -72,13 +72,6 @@ namespace YouTrackSharp.Specs.Specs
             projectShortName.ShouldEqual("SB");
         };
 
-        It should_return_custom_fields = () =>
-        {
-            string[] oldpriority = issue.oldpriority;
-
-            oldpriority[0].ShouldEqual("1");
-        };
-
         static dynamic issue;
     }
 
