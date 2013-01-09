@@ -43,7 +43,7 @@ namespace YouTrackSharp.Specs.Specs
     [Subject(typeof (IssueManagement))]
     public class when_requesting_list_of_issues_for_a_project_given_authenticated_connection : AuthenticatedYouTrackConnectionForIssue
     {
-        Because of = () => { issues = issueManagement.GetAllIssuesForProject("SB", 12); };
+        Because of = () => { issues = issueManagement.GetAllIssuesForProject("SB", 1200); };
 
         It should_return_list_of_issues_for_that_project = () => issues.Count().ShouldBeGreaterThan(0);
 
