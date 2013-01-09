@@ -62,7 +62,7 @@ namespace YouTrackSharp.Specs.Specs
         {
             string id = issue.Id;
 
-            id.ShouldEqual("SB-1");
+            id.ShouldEqual("SB-3");
         };
 
         It should_return_issue_with_correct_project_name = () =>
