@@ -55,7 +55,7 @@ namespace YouTrackSharp.Specs.Specs
     [Subject(typeof (IssueManagement))]
     public class when_requesting_a_specific_issue_given_authenticated_connection : AuthenticatedYouTrackConnectionForIssue
     {
-        Because of = () => { issue = issueManagement.GetIssue("SB-1"); };
+        Because of = () => { issue = issueManagement.GetIssue("SB-3"); };
 
         
         It should_return_issue_with_correct_id = () =>
