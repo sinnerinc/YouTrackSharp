@@ -137,6 +137,16 @@ namespace YouTrackSharp.Issues
             return _connection.Get<IEnumerable<Comment>>(String.Format("issue/comments/{0}", issueId));
         }
 
+        /// <summary>
+        /// Retrieve work items for a particular issue
+        /// </summary>
+        /// <param name="issueId"></param>
+        /// <returns></returns>
+        public IEnumerable<WorkItem> GetWorkItemsForIssue(string issueId)
+        {
+            return _connection.Get<IEnumerable<WorkItem>>(String.Format("issue/{0}/timetracking/workitem", issueId));            
+        }
+
         public bool CheckIfIssueExists(string issueId)
         {
             try
